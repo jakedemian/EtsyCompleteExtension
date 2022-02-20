@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "EtsyComplete",
+  "description": "Adds checkboxes for complete to etsy orders page.",
+  "version": "1.0",
+  "content_scripts": [
+      {
+        "js": ["content-script.js"],
+        "css": ["etsy-complete.css"],
+        "matches": ["https://*.etsy.com/your/orders/*"]
+      }
+  ],
+  "permissions": ["storage"]
+}
